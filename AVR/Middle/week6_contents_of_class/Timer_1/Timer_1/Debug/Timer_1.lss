@@ -1,0 +1,742 @@
+
+Timer_1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000012  00800100  00000348  000003bc  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000348  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000003ce  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000400  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000038  00000000  00000000  0000043c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000c04  00000000  00000000  00000474  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000008dd  00000000  00000000  00001078  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000047e  00000000  00000000  00001955  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  0000007c  00000000  00000000  00001dd4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000004b8  00000000  00000000  00001e50  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000004b6  00000000  00000000  00002308  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000040  00000000  00000000  000027be  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e8 e4       	ldi	r30, 0x48	; 72
+  a0:	f3 e0       	ldi	r31, 0x03	; 3
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a2 31       	cpi	r26, 0x12	; 18
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	a0 d0       	rcall	.+320    	; 0x1f4 <main>
+  b4:	47 c1       	rjmp	.+654    	; 0x344 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <FND_Display>:
+	}
+}
+
+void FND_Display(int idx, int number, int dot)
+{
+	if (idx == 0)
+  b8:	00 97       	sbiw	r24, 0x00	; 0
+  ba:	19 f4       	brne	.+6      	; 0xc2 <FND_Display+0xa>
+	PORTE = 0x10;
+  bc:	80 e1       	ldi	r24, 0x10	; 16
+  be:	83 b9       	out	0x03, r24	; 3
+  c0:	10 c0       	rjmp	.+32     	; 0xe2 <FND_Display+0x2a>
+	else if (idx == 1)
+  c2:	81 30       	cpi	r24, 0x01	; 1
+  c4:	91 05       	cpc	r25, r1
+  c6:	19 f4       	brne	.+6      	; 0xce <FND_Display+0x16>
+	PORTE = 0x20;
+  c8:	80 e2       	ldi	r24, 0x20	; 32
+  ca:	83 b9       	out	0x03, r24	; 3
+  cc:	0a c0       	rjmp	.+20     	; 0xe2 <FND_Display+0x2a>
+	else if (idx == 2)
+  ce:	82 30       	cpi	r24, 0x02	; 2
+  d0:	91 05       	cpc	r25, r1
+  d2:	19 f4       	brne	.+6      	; 0xda <FND_Display+0x22>
+	PORTE = 0x40;
+  d4:	80 e4       	ldi	r24, 0x40	; 64
+  d6:	83 b9       	out	0x03, r24	; 3
+  d8:	04 c0       	rjmp	.+8      	; 0xe2 <FND_Display+0x2a>
+	else if (idx == 3)
+  da:	03 97       	sbiw	r24, 0x03	; 3
+  dc:	11 f4       	brne	.+4      	; 0xe2 <FND_Display+0x2a>
+	PORTE = 0x80;
+  de:	80 e8       	ldi	r24, 0x80	; 128
+  e0:	83 b9       	out	0x03, r24	; 3
+
+	PORTB = Port_char[number];
+  e2:	fb 01       	movw	r30, r22
+  e4:	e0 50       	subi	r30, 0x00	; 0
+  e6:	ff 4f       	sbci	r31, 0xFF	; 255
+  e8:	80 81       	ld	r24, Z
+  ea:	88 bb       	out	0x18, r24	; 24
+
+	if (dot == 1)
+  ec:	41 30       	cpi	r20, 0x01	; 1
+  ee:	51 05       	cpc	r21, r1
+  f0:	19 f4       	brne	.+6      	; 0xf8 <FND_Display+0x40>
+	PORTB = PORTB & 0x7f;
+  f2:	88 b3       	in	r24, 0x18	; 24
+  f4:	8f 77       	andi	r24, 0x7F	; 127
+  f6:	88 bb       	out	0x18, r24	; 24
+  f8:	08 95       	ret
+
+000000fa <FND_Timer>:
+}
+
+void FND_Timer(int time)
+{
+  fa:	cf 92       	push	r12
+  fc:	df 92       	push	r13
+  fe:	ef 92       	push	r14
+ 100:	ff 92       	push	r15
+ 102:	0f 93       	push	r16
+ 104:	1f 93       	push	r17
+ 106:	cf 93       	push	r28
+ 108:	df 93       	push	r29
+ 10a:	9c 01       	movw	r18, r24
+	int minutes = time / 600;
+	int seconds = (time % 600) / 10;
+ 10c:	68 e5       	ldi	r22, 0x58	; 88
+ 10e:	72 e0       	ldi	r23, 0x02	; 2
+ 110:	f2 d0       	rcall	.+484    	; 0x2f6 <__divmodhi4>
+ 112:	8b 01       	movw	r16, r22
+ 114:	ec 01       	movw	r28, r24
+ 116:	6a e0       	ldi	r22, 0x0A	; 10
+ 118:	70 e0       	ldi	r23, 0x00	; 0
+ 11a:	ed d0       	rcall	.+474    	; 0x2f6 <__divmodhi4>
+ 11c:	7b 01       	movw	r14, r22
+
+	if (minutes == 0 && seconds == 0) {
+ 11e:	01 15       	cp	r16, r1
+ 120:	11 05       	cpc	r17, r1
+ 122:	f9 f4       	brne	.+62     	; 0x162 <FND_Timer+0x68>
+ 124:	67 2b       	or	r22, r23
+ 126:	e9 f4       	brne	.+58     	; 0x162 <FND_Timer+0x68>
+		// 타이머가 멈췄을 때 60:00을 표시
+		FND_Display(0, 6, 0); // 6: 60의 십의 자리
+ 128:	40 e0       	ldi	r20, 0x00	; 0
+ 12a:	50 e0       	ldi	r21, 0x00	; 0
+ 12c:	66 e0       	ldi	r22, 0x06	; 6
+ 12e:	70 e0       	ldi	r23, 0x00	; 0
+ 130:	80 e0       	ldi	r24, 0x00	; 0
+ 132:	90 e0       	ldi	r25, 0x00	; 0
+ 134:	c1 df       	rcall	.-126    	; 0xb8 <FND_Display>
+		FND_Display(1, 0, 1); // 0: 60의 일의 자리
+ 136:	41 e0       	ldi	r20, 0x01	; 1
+ 138:	50 e0       	ldi	r21, 0x00	; 0
+ 13a:	60 e0       	ldi	r22, 0x00	; 0
+ 13c:	70 e0       	ldi	r23, 0x00	; 0
+ 13e:	81 e0       	ldi	r24, 0x01	; 1
+ 140:	90 e0       	ldi	r25, 0x00	; 0
+ 142:	ba df       	rcall	.-140    	; 0xb8 <FND_Display>
+		FND_Display(2, 0, 0); // 0: 00의 십의 자리
+ 144:	40 e0       	ldi	r20, 0x00	; 0
+ 146:	50 e0       	ldi	r21, 0x00	; 0
+ 148:	60 e0       	ldi	r22, 0x00	; 0
+ 14a:	70 e0       	ldi	r23, 0x00	; 0
+ 14c:	82 e0       	ldi	r24, 0x02	; 2
+ 14e:	90 e0       	ldi	r25, 0x00	; 0
+ 150:	b3 df       	rcall	.-154    	; 0xb8 <FND_Display>
+		FND_Display(3, 0, 0); // 0: 00의 일의 자리
+ 152:	40 e0       	ldi	r20, 0x00	; 0
+ 154:	50 e0       	ldi	r21, 0x00	; 0
+ 156:	60 e0       	ldi	r22, 0x00	; 0
+ 158:	70 e0       	ldi	r23, 0x00	; 0
+ 15a:	83 e0       	ldi	r24, 0x03	; 3
+ 15c:	90 e0       	ldi	r25, 0x00	; 0
+ 15e:	ac df       	rcall	.-168    	; 0xb8 <FND_Display>
+		} 
+		
+	else {
+		FND_Display(0, minutes / 10, 0); // 십의 자리
+ 160:	29 c0       	rjmp	.+82     	; 0x1b4 <FND_Timer+0xba>
+ 162:	c9 01       	movw	r24, r18
+ 164:	60 e7       	ldi	r22, 0x70	; 112
+ 166:	77 e1       	ldi	r23, 0x17	; 23
+ 168:	c6 d0       	rcall	.+396    	; 0x2f6 <__divmodhi4>
+ 16a:	40 e0       	ldi	r20, 0x00	; 0
+ 16c:	50 e0       	ldi	r21, 0x00	; 0
+ 16e:	80 e0       	ldi	r24, 0x00	; 0
+ 170:	90 e0       	ldi	r25, 0x00	; 0
+ 172:	a2 df       	rcall	.-188    	; 0xb8 <FND_Display>
+		FND_Display(1, minutes % 10, 1); // 일의 자리
+ 174:	0f 2e       	mov	r0, r31
+ 176:	fa e0       	ldi	r31, 0x0A	; 10
+ 178:	cf 2e       	mov	r12, r31
+ 17a:	d1 2c       	mov	r13, r1
+ 17c:	f0 2d       	mov	r31, r0
+ 17e:	c8 01       	movw	r24, r16
+ 180:	b6 01       	movw	r22, r12
+ 182:	b9 d0       	rcall	.+370    	; 0x2f6 <__divmodhi4>
+ 184:	41 e0       	ldi	r20, 0x01	; 1
+ 186:	50 e0       	ldi	r21, 0x00	; 0
+ 188:	bc 01       	movw	r22, r24
+ 18a:	81 e0       	ldi	r24, 0x01	; 1
+ 18c:	90 e0       	ldi	r25, 0x00	; 0
+ 18e:	94 df       	rcall	.-216    	; 0xb8 <FND_Display>
+		FND_Display(2, seconds / 10, 0); // 십의 자리
+ 190:	ce 01       	movw	r24, r28
+ 192:	64 e6       	ldi	r22, 0x64	; 100
+ 194:	70 e0       	ldi	r23, 0x00	; 0
+ 196:	af d0       	rcall	.+350    	; 0x2f6 <__divmodhi4>
+ 198:	40 e0       	ldi	r20, 0x00	; 0
+ 19a:	50 e0       	ldi	r21, 0x00	; 0
+ 19c:	82 e0       	ldi	r24, 0x02	; 2
+ 19e:	90 e0       	ldi	r25, 0x00	; 0
+ 1a0:	8b df       	rcall	.-234    	; 0xb8 <FND_Display>
+		FND_Display(3, seconds % 10, 0); // 일의 자리
+ 1a2:	c7 01       	movw	r24, r14
+ 1a4:	b6 01       	movw	r22, r12
+ 1a6:	a7 d0       	rcall	.+334    	; 0x2f6 <__divmodhi4>
+ 1a8:	40 e0       	ldi	r20, 0x00	; 0
+ 1aa:	50 e0       	ldi	r21, 0x00	; 0
+ 1ac:	bc 01       	movw	r22, r24
+ 1ae:	83 e0       	ldi	r24, 0x03	; 3
+ 1b0:	90 e0       	ldi	r25, 0x00	; 0
+ 1b2:	82 df       	rcall	.-252    	; 0xb8 <FND_Display>
+ 1b4:	8f ef       	ldi	r24, 0xFF	; 255
+ 1b6:	93 e2       	ldi	r25, 0x23	; 35
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1b8:	01 97       	sbiw	r24, 0x01	; 1
+ 1ba:	f1 f7       	brne	.-4      	; 0x1b8 <FND_Timer+0xbe>
+ 1bc:	00 c0       	rjmp	.+0      	; 0x1be <FND_Timer+0xc4>
+ 1be:	00 00       	nop
+ 1c0:	df 91       	pop	r29
+ 1c2:	cf 91       	pop	r28
+	}
+	_delay_ms(2.5);
+}
+ 1c4:	1f 91       	pop	r17
+ 1c6:	0f 91       	pop	r16
+ 1c8:	ff 90       	pop	r15
+ 1ca:	ef 90       	pop	r14
+ 1cc:	df 90       	pop	r13
+ 1ce:	cf 90       	pop	r12
+ 1d0:	08 95       	ret
+
+000001d2 <PushButtonDet>:
+ 1d2:	20 b3       	in	r18, 0x10	; 16
+ 1d4:	30 e0       	ldi	r19, 0x00	; 0
+
+
+int PushButtonDet(int number)
+{
+	if (((~PIND >> number) & 0x1) == 1) // 비트 연산자 (~) : 0000 0000 -> 1111 1111
+ 1d6:	20 95       	com	r18
+ 1d8:	30 95       	com	r19
+ 1da:	02 c0       	rjmp	.+4      	; 0x1e0 <PushButtonDet+0xe>
+ 1dc:	35 95       	asr	r19
+ 1de:	27 95       	ror	r18
+ 1e0:	8a 95       	dec	r24
+ 1e2:	e2 f7       	brpl	.-8      	; 0x1dc <PushButtonDet+0xa>
+ 1e4:	c9 01       	movw	r24, r18
+ 1e6:	81 70       	andi	r24, 0x01	; 1
+ 1e8:	99 27       	eor	r25, r25
+ 1ea:	20 ff       	sbrs	r18, 0
+ 1ec:	02 c0       	rjmp	.+4      	; 0x1f2 <PushButtonDet+0x20>
+	return 1;
+ 1ee:	81 e0       	ldi	r24, 0x01	; 1
+ 1f0:	90 e0       	ldi	r25, 0x00	; 0
+	
+	else
+	return 0;
+ 1f2:	08 95       	ret
+
+000001f4 <main>:
+// FND 문자표 및 FND포트 핀 설정
+unsigned char Port_char[] ={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xd8,0x80,0x90,0x88,0x83,0xc6, 0xa1,0x86,0x8e,0xbf}; // 애노드 공통
+
+int main(void)
+{
+	DDRD = 0;
+ 1f4:	11 ba       	out	0x11, r1	; 17
+	DDRB = 0xff;
+ 1f6:	8f ef       	ldi	r24, 0xFF	; 255
+ 1f8:	87 bb       	out	0x17, r24	; 23
+	DDRE = 0xff;
+ 1fa:	82 b9       	out	0x02, r24	; 2
+
+	PORTE = 0x80;
+ 1fc:	80 e8       	ldi	r24, 0x80	; 128
+ 1fe:	83 b9       	out	0x03, r24	; 3
+	int button_press_count = 0; // 버튼 누름 횟수를 나타내는 변수
+	int timer_started = 0;      // 타이머 시작 여부를 나타내는 변수
+	int prev_button_state = 0;  // 이전 버튼 상태를 저장하는 변수
+	int stopped_time = 0;       // 타이머가 멈춘 시간을 나타내는 변수
+	int display_zero = 0;       // 초기화를 기다리는 동안 0을 표시할 변수
+	int timer_stopped = 0;      // 타이머가 멈추었는지를 나타내는 변수
+ 200:	a1 2c       	mov	r10, r1
+ 202:	b1 2c       	mov	r11, r1
+	int time_count = 3600; // 60분을 초로 환산한 값
+	int button_press_count = 0; // 버튼 누름 횟수를 나타내는 변수
+	int timer_started = 0;      // 타이머 시작 여부를 나타내는 변수
+	int prev_button_state = 0;  // 이전 버튼 상태를 저장하는 변수
+	int stopped_time = 0;       // 타이머가 멈춘 시간을 나타내는 변수
+	int display_zero = 0;       // 초기화를 기다리는 동안 0을 표시할 변수
+ 204:	c1 2c       	mov	r12, r1
+ 206:	d1 2c       	mov	r13, r1
+
+	int time_count = 3600; // 60분을 초로 환산한 값
+	int button_press_count = 0; // 버튼 누름 횟수를 나타내는 변수
+	int timer_started = 0;      // 타이머 시작 여부를 나타내는 변수
+	int prev_button_state = 0;  // 이전 버튼 상태를 저장하는 변수
+	int stopped_time = 0;       // 타이머가 멈춘 시간을 나타내는 변수
+ 208:	21 2c       	mov	r2, r1
+ 20a:	31 2c       	mov	r3, r1
+	PORTE = 0x80;
+
+	int time_count = 3600; // 60분을 초로 환산한 값
+	int button_press_count = 0; // 버튼 누름 횟수를 나타내는 변수
+	int timer_started = 0;      // 타이머 시작 여부를 나타내는 변수
+	int prev_button_state = 0;  // 이전 버튼 상태를 저장하는 변수
+ 20c:	61 2c       	mov	r6, r1
+ 20e:	71 2c       	mov	r7, r1
+
+	PORTE = 0x80;
+
+	int time_count = 3600; // 60분을 초로 환산한 값
+	int button_press_count = 0; // 버튼 누름 횟수를 나타내는 변수
+	int timer_started = 0;      // 타이머 시작 여부를 나타내는 변수
+ 210:	e1 2c       	mov	r14, r1
+ 212:	f1 2c       	mov	r15, r1
+	DDRE = 0xff;
+
+	PORTE = 0x80;
+
+	int time_count = 3600; // 60분을 초로 환산한 값
+	int button_press_count = 0; // 버튼 누름 횟수를 나타내는 변수
+ 214:	81 2c       	mov	r8, r1
+ 216:	91 2c       	mov	r9, r1
+	DDRB = 0xff;
+	DDRE = 0xff;
+
+	PORTE = 0x80;
+
+	int time_count = 3600; // 60분을 초로 환산한 값
+ 218:	00 e1       	ldi	r16, 0x10	; 16
+ 21a:	1e e0       	ldi	r17, 0x0E	; 14
+ 21c:	0d c0       	rjmp	.+26     	; 0x238 <main+0x44>
+			button_press_count = 0;  // 버튼 누름 횟수를 나타내는 변수
+			timer_started = 0;       // 타이머 시작 여부를 나타내는 변수
+			prev_button_state = 0;   // 이전 버튼 상태를 저장하는 변수
+			stopped_time = 0;        // 타이머가 멈춘 시간을 나타내는 변수
+			display_zero = 0;        // 0 표시 시작
+			timer_stopped = 0;       // 타이머 멈춤 상태 해제
+ 21e:	a1 2c       	mov	r10, r1
+ 220:	b1 2c       	mov	r11, r1
+			time_count = 3600; // 60분을 초로 환산한 값으로 초기화
+			button_press_count = 0;  // 버튼 누름 횟수를 나타내는 변수
+			timer_started = 0;       // 타이머 시작 여부를 나타내는 변수
+			prev_button_state = 0;   // 이전 버튼 상태를 저장하는 변수
+			stopped_time = 0;        // 타이머가 멈춘 시간을 나타내는 변수
+			display_zero = 0;        // 0 표시 시작
+ 222:	c1 2c       	mov	r12, r1
+ 224:	d1 2c       	mov	r13, r1
+		{ // 타이머가 실행 중이 아닐 때만 초기화 가능
+			time_count = 3600; // 60분을 초로 환산한 값으로 초기화
+			button_press_count = 0;  // 버튼 누름 횟수를 나타내는 변수
+			timer_started = 0;       // 타이머 시작 여부를 나타내는 변수
+			prev_button_state = 0;   // 이전 버튼 상태를 저장하는 변수
+			stopped_time = 0;        // 타이머가 멈춘 시간을 나타내는 변수
+ 226:	21 2c       	mov	r2, r1
+ 228:	31 2c       	mov	r3, r1
+		if (PushButtonDet(1) == 1 && !timer_started)
+		{ // 타이머가 실행 중이 아닐 때만 초기화 가능
+			time_count = 3600; // 60분을 초로 환산한 값으로 초기화
+			button_press_count = 0;  // 버튼 누름 횟수를 나타내는 변수
+			timer_started = 0;       // 타이머 시작 여부를 나타내는 변수
+			prev_button_state = 0;   // 이전 버튼 상태를 저장하는 변수
+ 22a:	c0 e0       	ldi	r28, 0x00	; 0
+ 22c:	d0 e0       	ldi	r29, 0x00	; 0
+
+		// 1번 버튼을 누를 경우 초기화
+		if (PushButtonDet(1) == 1 && !timer_started)
+		{ // 타이머가 실행 중이 아닐 때만 초기화 가능
+			time_count = 3600; // 60분을 초로 환산한 값으로 초기화
+			button_press_count = 0;  // 버튼 누름 횟수를 나타내는 변수
+ 22e:	81 2c       	mov	r8, r1
+ 230:	91 2c       	mov	r9, r1
+		prev_button_state = button_state; // 현재 버튼 상태를 이전 버튼 상태로 저장
+
+		// 1번 버튼을 누를 경우 초기화
+		if (PushButtonDet(1) == 1 && !timer_started)
+		{ // 타이머가 실행 중이 아닐 때만 초기화 가능
+			time_count = 3600; // 60분을 초로 환산한 값으로 초기화
+ 232:	00 e1       	ldi	r16, 0x10	; 16
+ 234:	1e e0       	ldi	r17, 0x0E	; 14
+ 236:	3e 01       	movw	r6, r28
+	int display_zero = 0;       // 초기화를 기다리는 동안 0을 표시할 변수
+	int timer_stopped = 0;      // 타이머가 멈추었는지를 나타내는 변수
+
+	while (1)
+	{
+		int button_state = PushButtonDet(0); // 현재 버튼 상태 확인
+ 238:	80 e0       	ldi	r24, 0x00	; 0
+ 23a:	90 e0       	ldi	r25, 0x00	; 0
+ 23c:	ca df       	rcall	.-108    	; 0x1d2 <PushButtonDet>
+ 23e:	ec 01       	movw	r28, r24
+
+		// 0번 버튼이 눌리지 않았을 때만 0을 표시하고 타이머가 실행 중이 아니면 초기화 가능
+		if (!display_zero && !timer_stopped)
+ 240:	c1 14       	cp	r12, r1
+ 242:	d1 04       	cpc	r13, r1
+ 244:	a1 f4       	brne	.+40     	; 0x26e <main+0x7a>
+ 246:	a1 14       	cp	r10, r1
+ 248:	b1 04       	cpc	r11, r1
+ 24a:	59 f0       	breq	.+22     	; 0x262 <main+0x6e>
+ 24c:	10 c0       	rjmp	.+32     	; 0x26e <main+0x7a>
+		{
+			for (int i = 0; i < 4; i++)
+				FND_Display(i, 0, 0);
+ 24e:	40 e0       	ldi	r20, 0x00	; 0
+ 250:	50 e0       	ldi	r21, 0x00	; 0
+ 252:	60 e0       	ldi	r22, 0x00	; 0
+ 254:	70 e0       	ldi	r23, 0x00	; 0
+ 256:	c2 01       	movw	r24, r4
+ 258:	2f df       	rcall	.-418    	; 0xb8 <FND_Display>
+		int button_state = PushButtonDet(0); // 현재 버튼 상태 확인
+
+		// 0번 버튼이 눌리지 않았을 때만 0을 표시하고 타이머가 실행 중이 아니면 초기화 가능
+		if (!display_zero && !timer_stopped)
+		{
+			for (int i = 0; i < 4; i++)
+ 25a:	8f ef       	ldi	r24, 0xFF	; 255
+ 25c:	48 1a       	sub	r4, r24
+ 25e:	58 0a       	sbc	r5, r24
+ 260:	02 c0       	rjmp	.+4      	; 0x266 <main+0x72>
+ 262:	41 2c       	mov	r4, r1
+ 264:	51 2c       	mov	r5, r1
+ 266:	84 e0       	ldi	r24, 0x04	; 4
+ 268:	48 16       	cp	r4, r24
+ 26a:	51 04       	cpc	r5, r1
+ 26c:	84 f3       	brlt	.-32     	; 0x24e <main+0x5a>
+				FND_Display(i, 0, 0);
+		}
+
+		// 버튼이 눌린 상태에서 이전에 눌리지 않았을 경우
+		if (button_state == 1 && prev_button_state == 0)
+ 26e:	c1 30       	cpi	r28, 0x01	; 1
+ 270:	d1 05       	cpc	r29, r1
+ 272:	11 f5       	brne	.+68     	; 0x2b8 <main+0xc4>
+ 274:	67 28       	or	r6, r7
+ 276:	01 f5       	brne	.+64     	; 0x2b8 <main+0xc4>
+		{
+			button_press_count++;
+ 278:	8f ef       	ldi	r24, 0xFF	; 255
+ 27a:	88 1a       	sub	r8, r24
+ 27c:	98 0a       	sbc	r9, r24
+			if (button_press_count == 1)
+ 27e:	81 e0       	ldi	r24, 0x01	; 1
+ 280:	88 16       	cp	r8, r24
+ 282:	91 04       	cpc	r9, r1
+ 284:	29 f0       	breq	.+10     	; 0x290 <main+0x9c>
+				timer_started = 1;     // 타이머 시작
+				display_zero = 1;      // 0 표시 중지
+				timer_stopped = 0;     // 타이머 멈춤 상태 해제
+			}
+
+			else if (button_press_count == 2)
+ 286:	82 e0       	ldi	r24, 0x02	; 2
+ 288:	88 16       	cp	r8, r24
+ 28a:	91 04       	cpc	r9, r1
+ 28c:	a9 f4       	brne	.+42     	; 0x2b8 <main+0xc4>
+ 28e:	09 c0       	rjmp	.+18     	; 0x2a2 <main+0xae>
+			button_press_count++;
+			if (button_press_count == 1)
+			{                          // 0번 버튼을 처음 누른 경우
+				timer_started = 1;     // 타이머 시작
+				display_zero = 1;      // 0 표시 중지
+				timer_stopped = 0;     // 타이머 멈춤 상태 해제
+ 290:	a1 2c       	mov	r10, r1
+ 292:	b1 2c       	mov	r11, r1
+		{
+			button_press_count++;
+			if (button_press_count == 1)
+			{                          // 0번 버튼을 처음 누른 경우
+				timer_started = 1;     // 타이머 시작
+				display_zero = 1;      // 0 표시 중지
+ 294:	cc 24       	eor	r12, r12
+ 296:	c3 94       	inc	r12
+ 298:	d1 2c       	mov	r13, r1
+		if (button_state == 1 && prev_button_state == 0)
+		{
+			button_press_count++;
+			if (button_press_count == 1)
+			{                          // 0번 버튼을 처음 누른 경우
+				timer_started = 1;     // 타이머 시작
+ 29a:	ee 24       	eor	r14, r14
+ 29c:	e3 94       	inc	r14
+ 29e:	f1 2c       	mov	r15, r1
+ 2a0:	0b c0       	rjmp	.+22     	; 0x2b8 <main+0xc4>
+				timer_stopped = 0;     // 타이머 멈춤 상태 해제
+			}
+
+			else if (button_press_count == 2)
+			{                          // 0번 버튼을 두 번째 누른 경우
+				stopped_time = time_count; // 타이머가 멈춘 시간 기록
+ 2a2:	20 2e       	mov	r2, r16
+ 2a4:	31 2e       	mov	r3, r17
+				timer_started = 0;         // 타이머 멈춤
+				button_press_count = 0;    // 버튼 누름 횟수 초기화
+				display_zero = 0;          // 0 표시 시작
+				timer_stopped = 1;         // 타이머 멈춤 상태 설정
+ 2a6:	aa 24       	eor	r10, r10
+ 2a8:	a3 94       	inc	r10
+ 2aa:	b1 2c       	mov	r11, r1
+			else if (button_press_count == 2)
+			{                          // 0번 버튼을 두 번째 누른 경우
+				stopped_time = time_count; // 타이머가 멈춘 시간 기록
+				timer_started = 0;         // 타이머 멈춤
+				button_press_count = 0;    // 버튼 누름 횟수 초기화
+				display_zero = 0;          // 0 표시 시작
+ 2ac:	c1 2c       	mov	r12, r1
+ 2ae:	d1 2c       	mov	r13, r1
+			}
+
+			else if (button_press_count == 2)
+			{                          // 0번 버튼을 두 번째 누른 경우
+				stopped_time = time_count; // 타이머가 멈춘 시간 기록
+				timer_started = 0;         // 타이머 멈춤
+ 2b0:	e1 2c       	mov	r14, r1
+ 2b2:	f1 2c       	mov	r15, r1
+				button_press_count = 0;    // 버튼 누름 횟수 초기화
+ 2b4:	81 2c       	mov	r8, r1
+ 2b6:	91 2c       	mov	r9, r1
+				display_zero = 0;          // 0 표시 시작
+				timer_stopped = 1;         // 타이머 멈춤 상태 설정
+			}
+		}
+
+		if (timer_started) // 타이머가 시작된 경우에만 실행
+ 2b8:	e1 14       	cp	r14, r1
+ 2ba:	f1 04       	cpc	r15, r1
+		{
+			FND_Timer(time_count);
+ 2bc:	31 f0       	breq	.+12     	; 0x2ca <main+0xd6>
+ 2be:	c8 01       	movw	r24, r16
+ 2c0:	1c df       	rcall	.-456    	; 0xfa <FND_Timer>
+			time_count--;
+ 2c2:	01 50       	subi	r16, 0x01	; 1
+ 2c4:	11 09       	sbc	r17, r1
+			if (time_count < 0) // 0초에 도달하면
+ 2c6:	62 f4       	brpl	.+24     	; 0x2e0 <main+0xec>
+			}
+		}
+
+		else
+		{ // 타이머가 멈춘 경우
+			FND_Timer(stopped_time); // 멈춘 시간 표시
+ 2c8:	04 c0       	rjmp	.+8      	; 0x2d2 <main+0xde>
+ 2ca:	82 2d       	mov	r24, r2
+ 2cc:	93 2d       	mov	r25, r3
+ 2ce:	15 df       	rcall	.-470    	; 0xfa <FND_Timer>
+ 2d0:	07 c0       	rjmp	.+14     	; 0x2e0 <main+0xec>
+			time_count--;
+			if (time_count < 0) // 0초에 도달하면
+			{
+				timer_started = 0; // 타이머 멈춤
+				stopped_time = 0; // 타이머가 멈춘 시간을 0초로 설정
+				timer_stopped = 1; // 타이머 멈춤 상태 설정
+ 2d2:	aa 24       	eor	r10, r10
+ 2d4:	a3 94       	inc	r10
+ 2d6:	b1 2c       	mov	r11, r1
+			FND_Timer(time_count);
+			time_count--;
+			if (time_count < 0) // 0초에 도달하면
+			{
+				timer_started = 0; // 타이머 멈춤
+				stopped_time = 0; // 타이머가 멈춘 시간을 0초로 설정
+ 2d8:	21 2c       	mov	r2, r1
+ 2da:	31 2c       	mov	r3, r1
+		{
+			FND_Timer(time_count);
+			time_count--;
+			if (time_count < 0) // 0초에 도달하면
+			{
+				timer_started = 0; // 타이머 멈춤
+ 2dc:	e1 2c       	mov	r14, r1
+		}
+
+		prev_button_state = button_state; // 현재 버튼 상태를 이전 버튼 상태로 저장
+
+		// 1번 버튼을 누를 경우 초기화
+		if (PushButtonDet(1) == 1 && !timer_started)
+ 2de:	f1 2c       	mov	r15, r1
+ 2e0:	81 e0       	ldi	r24, 0x01	; 1
+ 2e2:	90 e0       	ldi	r25, 0x00	; 0
+ 2e4:	76 df       	rcall	.-276    	; 0x1d2 <PushButtonDet>
+ 2e6:	01 97       	sbiw	r24, 0x01	; 1
+ 2e8:	09 f0       	breq	.+2      	; 0x2ec <main+0xf8>
+ 2ea:	a5 cf       	rjmp	.-182    	; 0x236 <main+0x42>
+ 2ec:	e1 14       	cp	r14, r1
+ 2ee:	f1 04       	cpc	r15, r1
+ 2f0:	09 f4       	brne	.+2      	; 0x2f4 <main+0x100>
+ 2f2:	95 cf       	rjmp	.-214    	; 0x21e <main+0x2a>
+ 2f4:	a0 cf       	rjmp	.-192    	; 0x236 <main+0x42>
+
+000002f6 <__divmodhi4>:
+ 2f6:	97 fb       	bst	r25, 7
+ 2f8:	07 2e       	mov	r0, r23
+ 2fa:	16 f4       	brtc	.+4      	; 0x300 <__divmodhi4+0xa>
+ 2fc:	00 94       	com	r0
+ 2fe:	06 d0       	rcall	.+12     	; 0x30c <__divmodhi4_neg1>
+ 300:	77 fd       	sbrc	r23, 7
+ 302:	08 d0       	rcall	.+16     	; 0x314 <__divmodhi4_neg2>
+ 304:	0b d0       	rcall	.+22     	; 0x31c <__udivmodhi4>
+ 306:	07 fc       	sbrc	r0, 7
+ 308:	05 d0       	rcall	.+10     	; 0x314 <__divmodhi4_neg2>
+ 30a:	3e f4       	brtc	.+14     	; 0x31a <__divmodhi4_exit>
+
+0000030c <__divmodhi4_neg1>:
+ 30c:	90 95       	com	r25
+ 30e:	81 95       	neg	r24
+ 310:	9f 4f       	sbci	r25, 0xFF	; 255
+ 312:	08 95       	ret
+
+00000314 <__divmodhi4_neg2>:
+ 314:	70 95       	com	r23
+ 316:	61 95       	neg	r22
+ 318:	7f 4f       	sbci	r23, 0xFF	; 255
+
+0000031a <__divmodhi4_exit>:
+ 31a:	08 95       	ret
+
+0000031c <__udivmodhi4>:
+ 31c:	aa 1b       	sub	r26, r26
+ 31e:	bb 1b       	sub	r27, r27
+ 320:	51 e1       	ldi	r21, 0x11	; 17
+ 322:	07 c0       	rjmp	.+14     	; 0x332 <__udivmodhi4_ep>
+
+00000324 <__udivmodhi4_loop>:
+ 324:	aa 1f       	adc	r26, r26
+ 326:	bb 1f       	adc	r27, r27
+ 328:	a6 17       	cp	r26, r22
+ 32a:	b7 07       	cpc	r27, r23
+ 32c:	10 f0       	brcs	.+4      	; 0x332 <__udivmodhi4_ep>
+ 32e:	a6 1b       	sub	r26, r22
+ 330:	b7 0b       	sbc	r27, r23
+
+00000332 <__udivmodhi4_ep>:
+ 332:	88 1f       	adc	r24, r24
+ 334:	99 1f       	adc	r25, r25
+ 336:	5a 95       	dec	r21
+ 338:	a9 f7       	brne	.-22     	; 0x324 <__udivmodhi4_loop>
+ 33a:	80 95       	com	r24
+ 33c:	90 95       	com	r25
+ 33e:	bc 01       	movw	r22, r24
+ 340:	cd 01       	movw	r24, r26
+ 342:	08 95       	ret
+
+00000344 <_exit>:
+ 344:	f8 94       	cli
+
+00000346 <__stop_program>:
+ 346:	ff cf       	rjmp	.-2      	; 0x346 <__stop_program>

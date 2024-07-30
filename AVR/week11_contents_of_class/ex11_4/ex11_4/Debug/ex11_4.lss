@@ -1,0 +1,328 @@
+
+ex11_4.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000000a  00800100  0000017c  000001f0  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000017c  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000001fa  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000022c  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000048  00000000  00000000  00000268  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000965  00000000  00000000  000002b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000835  00000000  00000000  00000c15  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000311  00000000  00000000  0000144a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000080  00000000  00000000  0000175c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000416  00000000  00000000  000017dc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000af  00000000  00000000  00001bf2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000038  00000000  00000000  00001ca1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ec e7       	ldi	r30, 0x7C	; 124
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	aa 30       	cpi	r26, 0x0A	; 10
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	44 d0       	rcall	.+136    	; 0x13c <main>
+  b4:	61 c0       	rjmp	.+194    	; 0x178 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <Init_USART1>:
+
+
+void Init_USART1()
+{
+	// UCSR1A = UCSR1A | (0b00011000);
+	UCSR1B |= 0b00011000;
+  b8:	ea e9       	ldi	r30, 0x9A	; 154
+  ba:	f0 e0       	ldi	r31, 0x00	; 0
+  bc:	80 81       	ld	r24, Z
+  be:	88 61       	ori	r24, 0x18	; 24
+  c0:	80 83       	st	Z, r24
+	UBRR1L = 95;	// Baud Rate에 맞게 설정
+  c2:	8f e5       	ldi	r24, 0x5F	; 95
+  c4:	80 93 99 00 	sts	0x0099, r24	; 0x800099 <__TEXT_REGION_LENGTH__+0x7e0099>
+  c8:	08 95       	ret
+
+000000ca <putchar_USART1>:
+}
+
+void putchar_USART1(char data)
+{
+	while(1){
+		if (UCSR1A = (UCSR1A & 0b00100000)){
+  ca:	eb e9       	ldi	r30, 0x9B	; 155
+  cc:	f0 e0       	ldi	r31, 0x00	; 0
+  ce:	90 81       	ld	r25, Z
+  d0:	90 72       	andi	r25, 0x20	; 32
+  d2:	90 83       	st	Z, r25
+  d4:	99 23       	and	r25, r25
+  d6:	c9 f3       	breq	.-14     	; 0xca <putchar_USART1>
+			UDR1 = data;
+  d8:	80 93 9c 00 	sts	0x009C, r24	; 0x80009c <__TEXT_REGION_LENGTH__+0x7e009c>
+  dc:	08 95       	ret
+
+000000de <puts_USART1>:
+		}
+	}
+}
+
+void puts_USART1(char *str)
+{
+  de:	cf 93       	push	r28
+  e0:	df 93       	push	r29
+  e2:	ec 01       	movw	r28, r24
+		//putchar_USART1(str[i]);
+		//i++;
+	//}
+	
+	// 고인물 방식
+	while (*str != 0){
+  e4:	02 c0       	rjmp	.+4      	; 0xea <puts_USART1+0xc>
+		putchar_USART1(*str);
+  e6:	f1 df       	rcall	.-30     	; 0xca <putchar_USART1>
+		str++;
+  e8:	21 96       	adiw	r28, 0x01	; 1
+		//putchar_USART1(str[i]);
+		//i++;
+	//}
+	
+	// 고인물 방식
+	while (*str != 0){
+  ea:	88 81       	ld	r24, Y
+  ec:	81 11       	cpse	r24, r1
+  ee:	fb cf       	rjmp	.-10     	; 0xe6 <puts_USART1+0x8>
+		putchar_USART1(*str);
+		str++;
+	}
+}
+  f0:	df 91       	pop	r29
+  f2:	cf 91       	pop	r28
+  f4:	08 95       	ret
+
+000000f6 <getchar_USART1>:
+
+unsigned char getchar_USART1()
+{
+	while(1){
+		if (UCSR1A & 0x80){	// if (UCSR1A & (1<<RXC1), 0x80 = 0b10000000;
+  f6:	80 91 9b 00 	lds	r24, 0x009B	; 0x80009b <__TEXT_REGION_LENGTH__+0x7e009b>
+  fa:	88 23       	and	r24, r24
+  fc:	e4 f7       	brge	.-8      	; 0xf6 <getchar_USART1>
+			return (UDR1);
+  fe:	80 91 9c 00 	lds	r24, 0x009C	; 0x80009c <__TEXT_REGION_LENGTH__+0x7e009c>
+		}
+	}
+}
+ 102:	08 95       	ret
+
+00000104 <LEDOnOff>:
+
+void LEDOnOff (int number, int onoff)
+{
+	char led_state;
+	led_state = ~PORTB;
+ 104:	98 b3       	in	r25, 0x18	; 24
+ 106:	90 95       	com	r25
+	
+	// 특정 위치를 1로 바꾸고 위치만 1인 비트열을 만듦
+	if (onoff == 1){
+ 108:	61 30       	cpi	r22, 0x01	; 1
+ 10a:	71 05       	cpc	r23, r1
+ 10c:	59 f4       	brne	.+22     	; 0x124 <LEDOnOff+0x20>
+		led_state = led_state | (1 << number); // 지정된 위치에만 1을 추가 하고 싶을 때 사용 number 만큼 이동
+ 10e:	21 e0       	ldi	r18, 0x01	; 1
+ 110:	30 e0       	ldi	r19, 0x00	; 0
+ 112:	02 c0       	rjmp	.+4      	; 0x118 <LEDOnOff+0x14>
+ 114:	22 0f       	add	r18, r18
+ 116:	33 1f       	adc	r19, r19
+ 118:	8a 95       	dec	r24
+ 11a:	e2 f7       	brpl	.-8      	; 0x114 <LEDOnOff+0x10>
+ 11c:	92 2b       	or	r25, r18
+		PORTB = ~led_state;
+ 11e:	90 95       	com	r25
+ 120:	98 bb       	out	0x18, r25	; 24
+ 122:	08 95       	ret
+	}
+	
+	else{
+		led_state = led_state & ~(1 << number); // 원하는 자리의 LED 끄기
+ 124:	21 e0       	ldi	r18, 0x01	; 1
+ 126:	30 e0       	ldi	r19, 0x00	; 0
+ 128:	02 c0       	rjmp	.+4      	; 0x12e <LEDOnOff+0x2a>
+ 12a:	22 0f       	add	r18, r18
+ 12c:	33 1f       	adc	r19, r19
+ 12e:	8a 95       	dec	r24
+ 130:	e2 f7       	brpl	.-8      	; 0x12a <LEDOnOff+0x26>
+ 132:	20 95       	com	r18
+ 134:	92 23       	and	r25, r18
+		PORTB = ~led_state;
+ 136:	90 95       	com	r25
+ 138:	98 bb       	out	0x18, r25	; 24
+ 13a:	08 95       	ret
+
+0000013c <main>:
+unsigned char getchar_USART1();
+void LEDOnOff(int number, int onoff);
+
+int main(void)
+{
+	DDRB = 0xff;
+ 13c:	8f ef       	ldi	r24, 0xFF	; 255
+ 13e:	87 bb       	out	0x17, r24	; 23
+	PORTB = 0xff;
+ 140:	88 bb       	out	0x18, r24	; 24
+
+	char rx_data;
+	Init_USART1();
+ 142:	ba df       	rcall	.-140    	; 0xb8 <Init_USART1>
+	
+	puts_USART1("Start \r\n");
+ 144:	80 e0       	ldi	r24, 0x00	; 0
+ 146:	91 e0       	ldi	r25, 0x01	; 1
+	while (1)
+	{
+		rx_data = getchar_USART1();
+ 148:	ca df       	rcall	.-108    	; 0xde <puts_USART1>
+ 14a:	d5 df       	rcall	.-86     	; 0xf6 <getchar_USART1>
+		putchar_USART1(rx_data);
+ 14c:	c8 2f       	mov	r28, r24
+		if (rx_data == '\r') putchar_USART1('\n');
+ 14e:	bd df       	rcall	.-134    	; 0xca <putchar_USART1>
+ 150:	cd 30       	cpi	r28, 0x0D	; 13
+ 152:	11 f4       	brne	.+4      	; 0x158 <main+0x1c>
+ 154:	8a e0       	ldi	r24, 0x0A	; 10
+ 156:	b9 df       	rcall	.-142    	; 0xca <putchar_USART1>
+		
+		if ((rx_data >= '0') && (rx_data <= '7')) {
+ 158:	80 ed       	ldi	r24, 0xD0	; 208
+ 15a:	8c 0f       	add	r24, r28
+ 15c:	88 30       	cpi	r24, 0x08	; 8
+ 15e:	38 f4       	brcc	.+14     	; 0x16e <main+0x32>
+			LEDOnOff(rx_data - '0', 1);
+ 160:	8c 2f       	mov	r24, r28
+ 162:	90 e0       	ldi	r25, 0x00	; 0
+ 164:	61 e0       	ldi	r22, 0x01	; 1
+ 166:	70 e0       	ldi	r23, 0x00	; 0
+ 168:	c0 97       	sbiw	r24, 0x30	; 48
+ 16a:	cc df       	rcall	.-104    	; 0x104 <LEDOnOff>
+ 16c:	ee cf       	rjmp	.-36     	; 0x14a <main+0xe>
+			//PORTB = 0xaa;
+		}
+			
+		else if (rx_data == 'q') {
+ 16e:	c1 37       	cpi	r28, 0x71	; 113
+ 170:	61 f7       	brne	.-40     	; 0x14a <main+0xe>
+			PORTB = 0xff;
+ 172:	8f ef       	ldi	r24, 0xFF	; 255
+ 174:	88 bb       	out	0x18, r24	; 24
+ 176:	e9 cf       	rjmp	.-46     	; 0x14a <main+0xe>
+
+00000178 <_exit>:
+ 178:	f8 94       	cli
+
+0000017a <__stop_program>:
+ 17a:	ff cf       	rjmp	.-2      	; 0x17a <__stop_program>

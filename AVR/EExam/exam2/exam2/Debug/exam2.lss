@@ -1,0 +1,370 @@
+
+exam2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000210  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001bc  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000210  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000240  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000040  00000000  00000000  0000027c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000c4c  00000000  00000000  000002bc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000008e6  00000000  00000000  00000f08  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000041b  00000000  00000000  000017ee  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  0000007c  00000000  00000000  00001c0c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000044d  00000000  00000000  00001c88  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000004cf  00000000  00000000  000020d5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000030  00000000  00000000  000025a4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	2d d0       	rcall	.+90     	; 0xf4 <main>
+  9a:	8e c0       	rjmp	.+284    	; 0x1b8 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <PushButtonDet>:
+	LEDOnOff(i, 1);
+}
+
+int PushButtonDet(int number)
+{
+	if (((~PIND >> number) & 0x1) == 1) // 비트 연산자 (~) : 0000 0000 -> 1111 1111
+  9e:	20 b3       	in	r18, 0x10	; 16
+  a0:	30 e0       	ldi	r19, 0x00	; 0
+  a2:	20 95       	com	r18
+  a4:	30 95       	com	r19
+  a6:	02 c0       	rjmp	.+4      	; 0xac <PushButtonDet+0xe>
+  a8:	35 95       	asr	r19
+  aa:	27 95       	ror	r18
+  ac:	8a 95       	dec	r24
+  ae:	e2 f7       	brpl	.-8      	; 0xa8 <PushButtonDet+0xa>
+  b0:	c9 01       	movw	r24, r18
+  b2:	81 70       	andi	r24, 0x01	; 1
+  b4:	99 27       	eor	r25, r25
+  b6:	20 ff       	sbrs	r18, 0
+  b8:	02 c0       	rjmp	.+4      	; 0xbe <PushButtonDet+0x20>
+	return 1;
+  ba:	81 e0       	ldi	r24, 0x01	; 1
+  bc:	90 e0       	ldi	r25, 0x00	; 0
+	
+	else
+	return 0;
+}
+  be:	08 95       	ret
+
+000000c0 <LEDOnOff>:
+
+void LEDOnOff (int number, int onoff)
+{
+	char led_state;
+	led_state = ~PORTB;
+  c0:	88 b3       	in	r24, 0x18	; 24
+	
+	// 특정 위치를 1로 바꾸고 위치만 1인 비트열을 만듦
+	if (onoff == 1){
+  c2:	61 30       	cpi	r22, 0x01	; 1
+  c4:	71 05       	cpc	r23, r1
+  c6:	09 f4       	brne	.+2      	; 0xca <LEDOnOff+0xa>
+			if (number = 1)
+			{
+				led_state = led_state | (1 << 0x55); // 지정된 위치에만 1을 추가
+				PORTB = ~led_state;
+  c8:	88 bb       	out	0x18, r24	; 24
+  ca:	08 95       	ret
+
+000000cc <LEDTimeOnOFF>:
+	}
+	return 0;
+}
+
+void LEDTimeOnOFF(unsigned t)
+{
+  cc:	cf 93       	push	r28
+  ce:	df 93       	push	r29
+	int i;
+	unsigned t_s;
+	t_s = t / 1000;
+	
+	for (i=0; i<8; i++)
+  d0:	c0 e0       	ldi	r28, 0x00	; 0
+  d2:	d0 e0       	ldi	r29, 0x00	; 0
+  d4:	05 c0       	rjmp	.+10     	; 0xe0 <LEDTimeOnOFF+0x14>
+	LEDOnOff(i, 1);
+  d6:	61 e0       	ldi	r22, 0x01	; 1
+  d8:	70 e0       	ldi	r23, 0x00	; 0
+  da:	ce 01       	movw	r24, r28
+  dc:	f1 df       	rcall	.-30     	; 0xc0 <LEDOnOff>
+{
+	int i;
+	unsigned t_s;
+	t_s = t / 1000;
+	
+	for (i=0; i<8; i++)
+  de:	21 96       	adiw	r28, 0x01	; 1
+  e0:	c8 30       	cpi	r28, 0x08	; 8
+  e2:	d1 05       	cpc	r29, r1
+  e4:	c4 f3       	brlt	.-16     	; 0xd6 <LEDTimeOnOFF+0xa>
+	LEDOnOff(i, 1);
+	
+	if (t_s >= 0)
+	LEDOnOff(i, 1);
+  e6:	61 e0       	ldi	r22, 0x01	; 1
+  e8:	70 e0       	ldi	r23, 0x00	; 0
+  ea:	ce 01       	movw	r24, r28
+  ec:	e9 df       	rcall	.-46     	; 0xc0 <LEDOnOff>
+}
+  ee:	df 91       	pop	r29
+  f0:	cf 91       	pop	r28
+  f2:	08 95       	ret
+
+000000f4 <main>:
+int ClickDet (int number, int polarity);
+void LEDTimeOnOFF(unsigned t);
+
+int main(void)
+{
+	DDRB = 0xff;
+  f4:	8f ef       	ldi	r24, 0xFF	; 255
+  f6:	87 bb       	out	0x17, r24	; 23
+	PORTB = 0xff; // 전원을 키고 난 후의 초깃값을 지정
+  f8:	88 bb       	out	0x18, r24	; 24
+	
+	DDRD = 0;
+  fa:	11 ba       	out	0x11, r1	; 17
+	
+	unsigned time_count = 0;
+  fc:	c0 e0       	ldi	r28, 0x00	; 0
+  fe:	d0 e0       	ldi	r29, 0x00	; 0
+	
+	while(1)
+	{
+		if (PushButtonDet(0))
+ 100:	80 e0       	ldi	r24, 0x00	; 0
+ 102:	90 e0       	ldi	r25, 0x00	; 0
+ 104:	cc df       	rcall	.-104    	; 0x9e <PushButtonDet>
+ 106:	89 2b       	or	r24, r25
+ 108:	21 f0       	breq	.+8      	; 0x112 <main+0x1e>
+		{
+			time_count++;
+ 10a:	21 96       	adiw	r28, 0x01	; 1
+			LEDTimeOnOFF(time_count);
+ 10c:	ce 01       	movw	r24, r28
+ 10e:	de df       	rcall	.-68     	; 0xcc <LEDTimeOnOFF>
+ 110:	4d c0       	rjmp	.+154    	; 0x1ac <main+0xb8>
+		}
+		
+		else if (PIND == 0xfd)
+ 112:	80 b3       	in	r24, 0x10	; 16
+ 114:	8d 3f       	cpi	r24, 0xFD	; 253
+ 116:	b9 f4       	brne	.+46     	; 0x146 <main+0x52>
+		{
+			PORTB = 0b10101010;
+ 118:	8a ea       	ldi	r24, 0xAA	; 170
+ 11a:	88 bb       	out	0x18, r24	; 24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 11c:	2f ef       	ldi	r18, 0xFF	; 255
+ 11e:	8f e7       	ldi	r24, 0x7F	; 127
+ 120:	96 e1       	ldi	r25, 0x16	; 22
+ 122:	21 50       	subi	r18, 0x01	; 1
+ 124:	80 40       	sbci	r24, 0x00	; 0
+ 126:	90 40       	sbci	r25, 0x00	; 0
+ 128:	e1 f7       	brne	.-8      	; 0x122 <main+0x2e>
+ 12a:	00 c0       	rjmp	.+0      	; 0x12c <main+0x38>
+ 12c:	00 00       	nop
+			_delay_ms(500);
+			PORTB = 0xff;
+ 12e:	8f ef       	ldi	r24, 0xFF	; 255
+ 130:	88 bb       	out	0x18, r24	; 24
+ 132:	2f ef       	ldi	r18, 0xFF	; 255
+ 134:	8f e7       	ldi	r24, 0x7F	; 127
+ 136:	96 e1       	ldi	r25, 0x16	; 22
+ 138:	21 50       	subi	r18, 0x01	; 1
+ 13a:	80 40       	sbci	r24, 0x00	; 0
+ 13c:	90 40       	sbci	r25, 0x00	; 0
+ 13e:	e1 f7       	brne	.-8      	; 0x138 <main+0x44>
+ 140:	00 c0       	rjmp	.+0      	; 0x142 <main+0x4e>
+ 142:	00 00       	nop
+ 144:	33 c0       	rjmp	.+102    	; 0x1ac <main+0xb8>
+			_delay_ms(500);
+		}
+		
+		else if (PushButtonDet(2))
+ 146:	82 e0       	ldi	r24, 0x02	; 2
+ 148:	90 e0       	ldi	r25, 0x00	; 0
+ 14a:	a9 df       	rcall	.-174    	; 0x9e <PushButtonDet>
+ 14c:	89 2b       	or	r24, r25
+ 14e:	b9 f0       	breq	.+46     	; 0x17e <main+0x8a>
+		{
+			PORTB = 0b01010101;
+ 150:	85 e5       	ldi	r24, 0x55	; 85
+ 152:	88 bb       	out	0x18, r24	; 24
+ 154:	2f ef       	ldi	r18, 0xFF	; 255
+ 156:	8f e7       	ldi	r24, 0x7F	; 127
+ 158:	96 e1       	ldi	r25, 0x16	; 22
+ 15a:	21 50       	subi	r18, 0x01	; 1
+ 15c:	80 40       	sbci	r24, 0x00	; 0
+ 15e:	90 40       	sbci	r25, 0x00	; 0
+ 160:	e1 f7       	brne	.-8      	; 0x15a <main+0x66>
+ 162:	00 c0       	rjmp	.+0      	; 0x164 <main+0x70>
+ 164:	00 00       	nop
+			_delay_ms(500);
+			PORTB = 0xff;
+ 166:	8f ef       	ldi	r24, 0xFF	; 255
+ 168:	88 bb       	out	0x18, r24	; 24
+ 16a:	2f ef       	ldi	r18, 0xFF	; 255
+ 16c:	8f e7       	ldi	r24, 0x7F	; 127
+ 16e:	96 e1       	ldi	r25, 0x16	; 22
+ 170:	21 50       	subi	r18, 0x01	; 1
+ 172:	80 40       	sbci	r24, 0x00	; 0
+ 174:	90 40       	sbci	r25, 0x00	; 0
+ 176:	e1 f7       	brne	.-8      	; 0x170 <main+0x7c>
+ 178:	00 c0       	rjmp	.+0      	; 0x17a <main+0x86>
+ 17a:	00 00       	nop
+ 17c:	17 c0       	rjmp	.+46     	; 0x1ac <main+0xb8>
+			_delay_ms(500);
+		}
+
+		else{
+			time_count = 0;
+			PORTB = 0xff;
+ 17e:	8f ef       	ldi	r24, 0xFF	; 255
+ 180:	88 bb       	out	0x18, r24	; 24
+ 182:	2f ef       	ldi	r18, 0xFF	; 255
+ 184:	8f e7       	ldi	r24, 0x7F	; 127
+ 186:	96 e1       	ldi	r25, 0x16	; 22
+ 188:	21 50       	subi	r18, 0x01	; 1
+ 18a:	80 40       	sbci	r24, 0x00	; 0
+ 18c:	90 40       	sbci	r25, 0x00	; 0
+ 18e:	e1 f7       	brne	.-8      	; 0x188 <main+0x94>
+ 190:	00 c0       	rjmp	.+0      	; 0x192 <main+0x9e>
+ 192:	00 00       	nop
+			_delay_ms(500);
+			PORTB = 0x00;
+ 194:	18 ba       	out	0x18, r1	; 24
+ 196:	2f ef       	ldi	r18, 0xFF	; 255
+ 198:	8f e7       	ldi	r24, 0x7F	; 127
+ 19a:	96 e1       	ldi	r25, 0x16	; 22
+ 19c:	21 50       	subi	r18, 0x01	; 1
+ 19e:	80 40       	sbci	r24, 0x00	; 0
+ 1a0:	90 40       	sbci	r25, 0x00	; 0
+ 1a2:	e1 f7       	brne	.-8      	; 0x19c <main+0xa8>
+ 1a4:	00 c0       	rjmp	.+0      	; 0x1a6 <main+0xb2>
+ 1a6:	00 00       	nop
+			PORTB = 0xff;
+			_delay_ms(500);
+		}
+
+		else{
+			time_count = 0;
+ 1a8:	c0 e0       	ldi	r28, 0x00	; 0
+ 1aa:	d0 e0       	ldi	r29, 0x00	; 0
+ 1ac:	86 e6       	ldi	r24, 0x66	; 102
+ 1ae:	9e e0       	ldi	r25, 0x0E	; 14
+ 1b0:	01 97       	sbiw	r24, 0x01	; 1
+ 1b2:	f1 f7       	brne	.-4      	; 0x1b0 <main+0xbc>
+ 1b4:	00 00       	nop
+ 1b6:	a4 cf       	rjmp	.-184    	; 0x100 <main+0xc>
+
+000001b8 <_exit>:
+ 1b8:	f8 94       	cli
+
+000001ba <__stop_program>:
+ 1ba:	ff cf       	rjmp	.-2      	; 0x1ba <__stop_program>

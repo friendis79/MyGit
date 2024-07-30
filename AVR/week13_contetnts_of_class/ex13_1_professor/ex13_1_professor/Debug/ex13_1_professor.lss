@@ -1,0 +1,580 @@
+
+ex13_1_professor.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000010  00800100  000002fa  0000038e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000002fa  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000002  00800110  00800110  0000039e  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000039e  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000003d0  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000068  00000000  00000000  0000040c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000b0e  00000000  00000000  00000474  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000008db  00000000  00000000  00000f82  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000466  00000000  00000000  0000185d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000150  00000000  00000000  00001cc4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000004b8  00000000  00000000  00001e14  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000030f  00000000  00000000  000022cc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000058  00000000  00000000  000025db  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	25 c1       	rjmp	.+586    	; 0x250 <__vector_1>
+   6:	00 00       	nop
+   8:	77 c0       	rjmp	.+238    	; 0xf8 <__vector_2>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ea ef       	ldi	r30, 0xFA	; 250
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 31       	cpi	r26, 0x10	; 16
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a0 e1       	ldi	r26, 0x10	; 16
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a2 31       	cpi	r26, 0x12	; 18
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	9f d0       	rcall	.+318    	; 0x202 <main>
+  c4:	18 c1       	rjmp	.+560    	; 0x2f6 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <InterruptInit>:
+
+void InterruptInit()
+{
+	// PORTD 0 = INT0 외부 인터럽트 사용 설정, 하강 엣지 감지
+	// PORTD 1 = INT1 외부 인터럽트 사용 설정, 상승 엣지 감지
+	EICRA = (2 << ISC00) | (3 << ISC10); // 0b00001110; // INT0 하강 엣지, INT1 상승 엣지
+  c8:	8e e0       	ldi	r24, 0x0E	; 14
+  ca:	80 93 6a 00 	sts	0x006A, r24	; 0x80006a <__TEXT_REGION_LENGTH__+0x7e006a>
+	EIMSK = (1 << INT0) | (1 << INT1); // 0b00000011; // INT0, INT1 사용 허가
+  ce:	83 e0       	ldi	r24, 0x03	; 3
+  d0:	89 bf       	out	0x39, r24	; 57
+	sei();	// Interrupt 반응하게 만들어줌 -> 호출 되어야만 함
+  d2:	78 94       	sei
+  d4:	08 95       	ret
+
+000000d6 <PushButtonDet>:
+}
+
+int PushButtonDet(int number)
+{
+	if (((~PIND >> number) & 0x1) == 1) // 비트 연산자 (~) : 0000_0000 -> 111_1111
+  d6:	20 b3       	in	r18, 0x10	; 16
+  d8:	30 e0       	ldi	r19, 0x00	; 0
+  da:	20 95       	com	r18
+  dc:	30 95       	com	r19
+  de:	02 c0       	rjmp	.+4      	; 0xe4 <PushButtonDet+0xe>
+  e0:	35 95       	asr	r19
+  e2:	27 95       	ror	r18
+  e4:	8a 95       	dec	r24
+  e6:	e2 f7       	brpl	.-8      	; 0xe0 <PushButtonDet+0xa>
+  e8:	c9 01       	movw	r24, r18
+  ea:	81 70       	andi	r24, 0x01	; 1
+  ec:	99 27       	eor	r25, r25
+  ee:	20 ff       	sbrs	r18, 0
+  f0:	02 c0       	rjmp	.+4      	; 0xf6 <PushButtonDet+0x20>
+	return 1;
+  f2:	81 e0       	ldi	r24, 0x01	; 1
+  f4:	90 e0       	ldi	r25, 0x00	; 0
+	
+	else
+	return 0;
+}
+  f6:	08 95       	ret
+
+000000f8 <__vector_2>:
+	// 외부 인터럽트 재활성화
+	EIMSK = (1 << INT0) | (1 << INT1);
+}
+
+ISR(INT1_vect)
+{
+  f8:	1f 92       	push	r1
+  fa:	0f 92       	push	r0
+  fc:	0f b6       	in	r0, 0x3f	; 63
+  fe:	0f 92       	push	r0
+ 100:	11 24       	eor	r1, r1
+ 102:	0b b6       	in	r0, 0x3b	; 59
+ 104:	0f 92       	push	r0
+ 106:	2f 93       	push	r18
+ 108:	3f 93       	push	r19
+ 10a:	4f 93       	push	r20
+ 10c:	5f 93       	push	r21
+ 10e:	6f 93       	push	r22
+ 110:	7f 93       	push	r23
+ 112:	8f 93       	push	r24
+ 114:	9f 93       	push	r25
+ 116:	af 93       	push	r26
+ 118:	bf 93       	push	r27
+ 11a:	ef 93       	push	r30
+ 11c:	ff 93       	push	r31
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 11e:	2f ef       	ldi	r18, 0xFF	; 255
+ 120:	8f e7       	ldi	r24, 0x7F	; 127
+ 122:	94 e0       	ldi	r25, 0x04	; 4
+ 124:	21 50       	subi	r18, 0x01	; 1
+ 126:	80 40       	sbci	r24, 0x00	; 0
+ 128:	90 40       	sbci	r25, 0x00	; 0
+ 12a:	e1 f7       	brne	.-8      	; 0x124 <__vector_2+0x2c>
+ 12c:	00 c0       	rjmp	.+0      	; 0x12e <__vector_2+0x36>
+ 12e:	00 00       	nop
+	// 100ms 이후에 버튼이 때져야 땠다고 판단함.
+	_delay_ms(100);
+	if(PushButtonDet(1))	BtnPressed = 1;
+ 130:	81 e0       	ldi	r24, 0x01	; 1
+ 132:	90 e0       	ldi	r25, 0x00	; 0
+ 134:	d0 df       	rcall	.-96     	; 0xd6 <PushButtonDet>
+ 136:	89 2b       	or	r24, r25
+ 138:	31 f0       	breq	.+12     	; 0x146 <__vector_2+0x4e>
+ 13a:	81 e0       	ldi	r24, 0x01	; 1
+ 13c:	90 e0       	ldi	r25, 0x00	; 0
+ 13e:	90 93 11 01 	sts	0x0111, r25	; 0x800111 <__data_end+0x1>
+ 142:	80 93 10 01 	sts	0x0110, r24	; 0x800110 <__data_end>
+	
+	// 불안정한 신호에 의해서 발생한 인터럽트는 무시함.
+	EIFR = 1 << INTF1; //0x2;	// 0b000_0010 => 인터럽트 플래그 clear
+ 146:	82 e0       	ldi	r24, 0x02	; 2
+ 148:	88 bf       	out	0x38, r24	; 56
+}
+ 14a:	ff 91       	pop	r31
+ 14c:	ef 91       	pop	r30
+ 14e:	bf 91       	pop	r27
+ 150:	af 91       	pop	r26
+ 152:	9f 91       	pop	r25
+ 154:	8f 91       	pop	r24
+ 156:	7f 91       	pop	r23
+ 158:	6f 91       	pop	r22
+ 15a:	5f 91       	pop	r21
+ 15c:	4f 91       	pop	r20
+ 15e:	3f 91       	pop	r19
+ 160:	2f 91       	pop	r18
+ 162:	0f 90       	pop	r0
+ 164:	0b be       	out	0x3b, r0	; 59
+ 166:	0f 90       	pop	r0
+ 168:	0f be       	out	0x3f, r0	; 63
+ 16a:	0f 90       	pop	r0
+ 16c:	1f 90       	pop	r1
+ 16e:	18 95       	reti
+
+00000170 <Init_USART1>:
+}
+
+void Init_USART1()
+{
+	// UCSR1A = UCSR1A | (0b00011000);
+	UCSR1B |= 0b00011000;
+ 170:	ea e9       	ldi	r30, 0x9A	; 154
+ 172:	f0 e0       	ldi	r31, 0x00	; 0
+ 174:	80 81       	ld	r24, Z
+ 176:	88 61       	ori	r24, 0x18	; 24
+ 178:	80 83       	st	Z, r24
+	UBRR1L = 95;	// Baud Rate에 맞게 설정
+ 17a:	8f e5       	ldi	r24, 0x5F	; 95
+ 17c:	80 93 99 00 	sts	0x0099, r24	; 0x800099 <__TEXT_REGION_LENGTH__+0x7e0099>
+ 180:	08 95       	ret
+
+00000182 <putchar_USART1>:
+}
+
+void putchar_USART1(char data)
+{
+	while(1){
+		if (UCSR1A = (UCSR1A & 0b00100000)){
+ 182:	eb e9       	ldi	r30, 0x9B	; 155
+ 184:	f0 e0       	ldi	r31, 0x00	; 0
+ 186:	90 81       	ld	r25, Z
+ 188:	90 72       	andi	r25, 0x20	; 32
+ 18a:	90 83       	st	Z, r25
+ 18c:	99 23       	and	r25, r25
+ 18e:	c9 f3       	breq	.-14     	; 0x182 <putchar_USART1>
+			UDR1 = data;
+ 190:	80 93 9c 00 	sts	0x009C, r24	; 0x80009c <__TEXT_REGION_LENGTH__+0x7e009c>
+ 194:	08 95       	ret
+
+00000196 <puts_USART1>:
+		}
+	}
+}
+
+void puts_USART1(char *str)
+{
+ 196:	cf 93       	push	r28
+ 198:	df 93       	push	r29
+ 19a:	ec 01       	movw	r28, r24
+
+	while (*str != 0) {
+ 19c:	02 c0       	rjmp	.+4      	; 0x1a2 <puts_USART1+0xc>
+		putchar_USART1(*str);
+ 19e:	f1 df       	rcall	.-30     	; 0x182 <putchar_USART1>
+		str++;
+ 1a0:	21 96       	adiw	r28, 0x01	; 1
+}
+
+void puts_USART1(char *str)
+{
+
+	while (*str != 0) {
+ 1a2:	88 81       	ld	r24, Y
+ 1a4:	81 11       	cpse	r24, r1
+ 1a6:	fb cf       	rjmp	.-10     	; 0x19e <puts_USART1+0x8>
+		putchar_USART1(*str);
+		str++;
+	}
+}
+ 1a8:	df 91       	pop	r29
+ 1aa:	cf 91       	pop	r28
+ 1ac:	08 95       	ret
+
+000001ae <getchar_USART1>:
+
+unsigned char getchar_USART1()
+{
+	while(1){
+		if (UCSR1A & 0x80){	// if (UCSR1A & (1<<RXC1), 0x80 = 0b10000000;
+ 1ae:	80 91 9b 00 	lds	r24, 0x009B	; 0x80009b <__TEXT_REGION_LENGTH__+0x7e009b>
+ 1b2:	88 23       	and	r24, r24
+ 1b4:	1c f4       	brge	.+6      	; 0x1bc <getchar_USART1+0xe>
+			return (UDR1);
+ 1b6:	80 91 9c 00 	lds	r24, 0x009C	; 0x80009c <__TEXT_REGION_LENGTH__+0x7e009c>
+ 1ba:	08 95       	ret
+		}
+		else if (BtnPressed)	break;
+ 1bc:	80 91 10 01 	lds	r24, 0x0110	; 0x800110 <__data_end>
+ 1c0:	90 91 11 01 	lds	r25, 0x0111	; 0x800111 <__data_end+0x1>
+ 1c4:	89 2b       	or	r24, r25
+ 1c6:	99 f3       	breq	.-26     	; 0x1ae <getchar_USART1>
+	}
+}
+ 1c8:	08 95       	ret
+
+000001ca <LEDOnOff>:
+
+void LEDOnOff (int number, int onoff)
+{
+	char led_state;
+	led_state = ~PORTB;
+ 1ca:	98 b3       	in	r25, 0x18	; 24
+ 1cc:	90 95       	com	r25
+	
+	// 특정 위치를 1로 바꾸고 위치만 1인 비트열을 만듦
+	if (onoff == 1){
+ 1ce:	61 30       	cpi	r22, 0x01	; 1
+ 1d0:	71 05       	cpc	r23, r1
+ 1d2:	59 f4       	brne	.+22     	; 0x1ea <LEDOnOff+0x20>
+		led_state = led_state | (1 << number); // 지정된 위치에만 1을 추가 하고 싶을 때 사용 number 만큼 이동
+ 1d4:	21 e0       	ldi	r18, 0x01	; 1
+ 1d6:	30 e0       	ldi	r19, 0x00	; 0
+ 1d8:	02 c0       	rjmp	.+4      	; 0x1de <LEDOnOff+0x14>
+ 1da:	22 0f       	add	r18, r18
+ 1dc:	33 1f       	adc	r19, r19
+ 1de:	8a 95       	dec	r24
+ 1e0:	e2 f7       	brpl	.-8      	; 0x1da <LEDOnOff+0x10>
+ 1e2:	92 2b       	or	r25, r18
+		PORTB = ~led_state;
+ 1e4:	90 95       	com	r25
+ 1e6:	98 bb       	out	0x18, r25	; 24
+ 1e8:	08 95       	ret
+	}
+	
+	else{
+		led_state = led_state & ~(1 << number); // 원하는 자리의 LED 끄기
+ 1ea:	21 e0       	ldi	r18, 0x01	; 1
+ 1ec:	30 e0       	ldi	r19, 0x00	; 0
+ 1ee:	02 c0       	rjmp	.+4      	; 0x1f4 <LEDOnOff+0x2a>
+ 1f0:	22 0f       	add	r18, r18
+ 1f2:	33 1f       	adc	r19, r19
+ 1f4:	8a 95       	dec	r24
+ 1f6:	e2 f7       	brpl	.-8      	; 0x1f0 <LEDOnOff+0x26>
+ 1f8:	20 95       	com	r18
+ 1fa:	92 23       	and	r25, r18
+		PORTB = ~led_state;
+ 1fc:	90 95       	com	r25
+ 1fe:	98 bb       	out	0x18, r25	; 24
+ 200:	08 95       	ret
+
+00000202 <main>:
+int BtnPressed = 0;
+int ONLED = -1;
+
+int main(void)
+{
+	DDRB = 0xff;
+ 202:	8f ef       	ldi	r24, 0xFF	; 255
+ 204:	87 bb       	out	0x17, r24	; 23
+	DDRD = 0x0;
+ 206:	11 ba       	out	0x11, r1	; 17
+	
+	PORTB = 0xff;
+ 208:	88 bb       	out	0x18, r24	; 24
+	
+	InterruptInit();
+ 20a:	5e df       	rcall	.-324    	; 0xc8 <InterruptInit>
+	
+	char rx_data;
+	Init_USART1();
+ 20c:	b1 df       	rcall	.-158    	; 0x170 <Init_USART1>
+ 20e:	82 e0       	ldi	r24, 0x02	; 2
+	
+	puts_USART1("Start \r\n");
+ 210:	91 e0       	ldi	r25, 0x01	; 1
+ 212:	c1 df       	rcall	.-126    	; 0x196 <puts_USART1>
+	
+	while (1)
+	{
+		rx_data = getchar_USART1();
+ 214:	cc df       	rcall	.-104    	; 0x1ae <getchar_USART1>
+ 216:	c8 2f       	mov	r28, r24
+ 218:	8d 30       	cpi	r24, 0x0D	; 13
+		if (rx_data == '\r') {
+ 21a:	69 f4       	brne	.+26     	; 0x236 <main+0x34>
+			puts_USART1("\r \n");
+ 21c:	8b e0       	ldi	r24, 0x0B	; 11
+ 21e:	91 e0       	ldi	r25, 0x01	; 1
+ 220:	ba df       	rcall	.-140    	; 0x196 <puts_USART1>
+ 222:	8f ef       	ldi	r24, 0xFF	; 255
+			PORTB = 0xff;
+ 224:	88 bb       	out	0x18, r24	; 24
+ 226:	61 e0       	ldi	r22, 0x01	; 1
+			LEDOnOff(ONLED, 1);
+ 228:	70 e0       	ldi	r23, 0x00	; 0
+ 22a:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 22e:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 232:	cb df       	rcall	.-106    	; 0x1ca <LEDOnOff>
+ 234:	ef cf       	rjmp	.-34     	; 0x214 <main+0x12>
+		}
+		else {
+			putchar_USART1(rx_data);
+ 236:	a5 df       	rcall	.-182    	; 0x182 <putchar_USART1>
+ 238:	80 ed       	ldi	r24, 0xD0	; 208
+			if ((rx_data >= '0') & (rx_data <= '7')) {
+ 23a:	8c 0f       	add	r24, r28
+ 23c:	88 30       	cpi	r24, 0x08	; 8
+ 23e:	50 f7       	brcc	.-44     	; 0x214 <main+0x12>
+ 240:	8c 2f       	mov	r24, r28
+				ONLED = rx_data - '0';
+ 242:	90 e0       	ldi	r25, 0x00	; 0
+ 244:	c0 97       	sbiw	r24, 0x30	; 48
+ 246:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 24a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 24e:	e2 cf       	rjmp	.-60     	; 0x214 <main+0x12>
+
+00000250 <__vector_1>:
+ 250:	1f 92       	push	r1
+	EIFR = 1 << INTF0; //0x1;	// 0b000_0001 => 인터럽트 플래그 clear
+}
+*/
+
+ISR(INT0_vect)
+{
+ 252:	0f 92       	push	r0
+ 254:	0f b6       	in	r0, 0x3f	; 63
+ 256:	0f 92       	push	r0
+ 258:	11 24       	eor	r1, r1
+ 25a:	0b b6       	in	r0, 0x3b	; 59
+ 25c:	0f 92       	push	r0
+ 25e:	2f 93       	push	r18
+ 260:	3f 93       	push	r19
+ 262:	4f 93       	push	r20
+ 264:	5f 93       	push	r21
+ 266:	6f 93       	push	r22
+ 268:	7f 93       	push	r23
+ 26a:	8f 93       	push	r24
+ 26c:	9f 93       	push	r25
+ 26e:	af 93       	push	r26
+ 270:	bf 93       	push	r27
+ 272:	ef 93       	push	r30
+ 274:	ff 93       	push	r31
+	// 외부 인터럽트 비활성화
+	// EIMSK = 0;
+	// 사실은 0번에 대한 인터럽트만 비활성화 시켜야 함
+	EIMSK = EIMSK & ~(1 << INT0);
+ 276:	89 b7       	in	r24, 0x39	; 57
+ 278:	8e 7f       	andi	r24, 0xFE	; 254
+ 27a:	89 bf       	out	0x39, r24	; 57
+ 27c:	2f ef       	ldi	r18, 0xFF	; 255
+ 27e:	8f e7       	ldi	r24, 0x7F	; 127
+ 280:	94 e0       	ldi	r25, 0x04	; 4
+ 282:	21 50       	subi	r18, 0x01	; 1
+ 284:	80 40       	sbci	r24, 0x00	; 0
+ 286:	90 40       	sbci	r25, 0x00	; 0
+ 288:	e1 f7       	brne	.-8      	; 0x282 <__vector_1+0x32>
+ 28a:	00 c0       	rjmp	.+0      	; 0x28c <__vector_1+0x3c>
+ 28c:	00 00       	nop
+	// 100ms 후에도 버튼이 눌려있어야 눌렸다고 판단함
+	_delay_ms(100);
+	if(PushButtonDet(0)) {
+ 28e:	80 e0       	ldi	r24, 0x00	; 0
+ 290:	90 e0       	ldi	r25, 0x00	; 0
+ 292:	21 df       	rcall	.-446    	; 0xd6 <PushButtonDet>
+ 294:	89 2b       	or	r24, r25
+ 296:	c1 f0       	breq	.+48     	; 0x2c8 <__vector_1+0x78>
+		PORTB = 0xff;
+ 298:	8f ef       	ldi	r24, 0xFF	; 255
+ 29a:	88 bb       	out	0x18, r24	; 24
+		ONLED++;
+ 29c:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 2a0:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 2a4:	01 96       	adiw	r24, 0x01	; 1
+ 2a6:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 2aa:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+		if (ONLED == 8)	ONLED = 0;
+ 2ae:	08 97       	sbiw	r24, 0x08	; 8
+ 2b0:	21 f4       	brne	.+8      	; 0x2ba <__vector_1+0x6a>
+ 2b2:	10 92 01 01 	sts	0x0101, r1	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 2b6:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+		LEDOnOff(ONLED, 1);
+ 2ba:	61 e0       	ldi	r22, 0x01	; 1
+ 2bc:	70 e0       	ldi	r23, 0x00	; 0
+ 2be:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 2c2:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 2c6:	81 df       	rcall	.-254    	; 0x1ca <LEDOnOff>
+	}
+	
+	// 불안정한 신호에 의해서 발생한 인터럽트는 무시함.
+	EIFR = 1 << INTF0; //0x1;	// 0b000_0001 => 인터럽트 플래그 clear
+ 2c8:	81 e0       	ldi	r24, 0x01	; 1
+ 2ca:	88 bf       	out	0x38, r24	; 56
+	// 외부 인터럽트 재활성화
+	EIMSK = (1 << INT0) | (1 << INT1);
+ 2cc:	83 e0       	ldi	r24, 0x03	; 3
+ 2ce:	89 bf       	out	0x39, r24	; 57
+}
+ 2d0:	ff 91       	pop	r31
+ 2d2:	ef 91       	pop	r30
+ 2d4:	bf 91       	pop	r27
+ 2d6:	af 91       	pop	r26
+ 2d8:	9f 91       	pop	r25
+ 2da:	8f 91       	pop	r24
+ 2dc:	7f 91       	pop	r23
+ 2de:	6f 91       	pop	r22
+ 2e0:	5f 91       	pop	r21
+ 2e2:	4f 91       	pop	r20
+ 2e4:	3f 91       	pop	r19
+ 2e6:	2f 91       	pop	r18
+ 2e8:	0f 90       	pop	r0
+ 2ea:	0b be       	out	0x3b, r0	; 59
+ 2ec:	0f 90       	pop	r0
+ 2ee:	0f be       	out	0x3f, r0	; 63
+ 2f0:	0f 90       	pop	r0
+ 2f2:	1f 90       	pop	r1
+ 2f4:	18 95       	reti
+
+000002f6 <_exit>:
+ 2f6:	f8 94       	cli
+
+000002f8 <__stop_program>:
+ 2f8:	ff cf       	rjmp	.-2      	; 0x2f8 <__stop_program>

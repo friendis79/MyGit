@@ -1,0 +1,315 @@
+
+ex10_2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000202  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001ae  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000202  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000234  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000038  00000000  00000000  00000270  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000ae4  00000000  00000000  000002a8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000875  00000000  00000000  00000d8c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000038a  00000000  00000000  00001601  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000068  00000000  00000000  0000198c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000043f  00000000  00000000  000019f4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000014b  00000000  00000000  00001e33  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000028  00000000  00000000  00001f7e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	3c d0       	rcall	.+120    	; 0x112 <main>
+  9a:	87 c0       	rjmp	.+270    	; 0x1aa <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <myDelay_us>:
+	myDelay_us(duty);	// period 절반 시간 지남
+}
+
+void myDelay_us(unsigned int delay){
+	int i;
+	for(i=0; i<delay; i++)		_delay_us(1);
+  9e:	20 e0       	ldi	r18, 0x00	; 0
+  a0:	30 e0       	ldi	r19, 0x00	; 0
+  a2:	05 c0       	rjmp	.+10     	; 0xae <myDelay_us+0x10>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  a4:	45 e0       	ldi	r20, 0x05	; 5
+  a6:	4a 95       	dec	r20
+  a8:	f1 f7       	brne	.-4      	; 0xa6 <myDelay_us+0x8>
+  aa:	2f 5f       	subi	r18, 0xFF	; 255
+  ac:	3f 4f       	sbci	r19, 0xFF	; 255
+  ae:	28 17       	cp	r18, r24
+  b0:	39 07       	cpc	r19, r25
+  b2:	c0 f3       	brcs	.-16     	; 0xa4 <myDelay_us+0x6>
+	PORTG |= (1<<4);
+  b4:	e5 e6       	ldi	r30, 0x65	; 101
+  b6:	f0 e0       	ldi	r31, 0x00	; 0
+  b8:	80 81       	ld	r24, Z
+  ba:	80 61       	ori	r24, 0x10	; 16
+  bc:	80 83       	st	Z, r24
+  be:	08 95       	ret
+
+000000c0 <MakeSound>:
+		
+	}
+}
+
+void MakeSound(int period)
+{
+  c0:	0f 93       	push	r16
+  c2:	1f 93       	push	r17
+  c4:	cf 93       	push	r28
+  c6:	df 93       	push	r29
+	int duty = period >> 1;	// 나누기는 연산 시간이 다른 연산 (더하기, 빼기에 비해 연산시간이 더 오래 걸림) -> 비트 연산자 사용하는 것이 좋음
+  c8:	8c 01       	movw	r16, r24
+  ca:	15 95       	asr	r17
+  cc:	07 95       	ror	r16
+	
+	PORTG = PORTG | (1 << 4);	//출력
+  ce:	c5 e6       	ldi	r28, 0x65	; 101
+  d0:	d0 e0       	ldi	r29, 0x00	; 0
+  d2:	88 81       	ld	r24, Y
+  d4:	80 61       	ori	r24, 0x10	; 16
+  d6:	88 83       	st	Y, r24
+	myDelay_us(duty);	//period 절반 시간 지남
+  d8:	c8 01       	movw	r24, r16
+  da:	e1 df       	rcall	.-62     	; 0x9e <myDelay_us>
+	PORTG = PORTG & ~(1 << 4);	// 0출력
+  dc:	88 81       	ld	r24, Y
+  de:	8f 7e       	andi	r24, 0xEF	; 239
+  e0:	88 83       	st	Y, r24
+	myDelay_us(duty);	// period 절반 시간 지남
+  e2:	c8 01       	movw	r24, r16
+  e4:	dc df       	rcall	.-72     	; 0x9e <myDelay_us>
+}
+  e6:	df 91       	pop	r29
+  e8:	cf 91       	pop	r28
+  ea:	1f 91       	pop	r17
+  ec:	0f 91       	pop	r16
+  ee:	08 95       	ret
+
+000000f0 <PushButtonDet>:
+	PORTG |= (1<<4);
+}
+
+int PushButtonDet(int number)
+{
+	if (((~PIND >> number) & 0x1) == 1)		return 1;
+  f0:	20 b3       	in	r18, 0x10	; 16
+  f2:	30 e0       	ldi	r19, 0x00	; 0
+  f4:	20 95       	com	r18
+  f6:	30 95       	com	r19
+  f8:	02 c0       	rjmp	.+4      	; 0xfe <PushButtonDet+0xe>
+  fa:	35 95       	asr	r19
+  fc:	27 95       	ror	r18
+  fe:	8a 95       	dec	r24
+ 100:	e2 f7       	brpl	.-8      	; 0xfa <PushButtonDet+0xa>
+ 102:	c9 01       	movw	r24, r18
+ 104:	81 70       	andi	r24, 0x01	; 1
+ 106:	99 27       	eor	r25, r25
+ 108:	20 ff       	sbrs	r18, 0
+ 10a:	02 c0       	rjmp	.+4      	; 0x110 <PushButtonDet+0x20>
+ 10c:	81 e0       	ldi	r24, 0x01	; 1
+ 10e:	90 e0       	ldi	r25, 0x00	; 0
+	
+	else                                    return 0;
+ 110:	08 95       	ret
+
+00000112 <main>:
+void myDelay_us(unsigned int delay);
+int PushButtonDet(int number);
+
+int main(void)
+{
+	DDRG = 0xff;
+ 112:	8f ef       	ldi	r24, 0xFF	; 255
+ 114:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__TEXT_REGION_LENGTH__+0x7e0064>
+	
+	/* Replace with your application code */
+	while (1)
+	{
+		if(PushButtonDet(0) == 1)		MakeSound(DO);
+ 118:	80 e0       	ldi	r24, 0x00	; 0
+ 11a:	90 e0       	ldi	r25, 0x00	; 0
+ 11c:	e9 df       	rcall	.-46     	; 0xf0 <PushButtonDet>
+ 11e:	01 97       	sbiw	r24, 0x01	; 1
+ 120:	21 f4       	brne	.+8      	; 0x12a <main+0x18>
+ 122:	89 ee       	ldi	r24, 0xE9	; 233
+ 124:	9e e0       	ldi	r25, 0x0E	; 14
+ 126:	cc df       	rcall	.-104    	; 0xc0 <MakeSound>
+ 128:	f7 cf       	rjmp	.-18     	; 0x118 <main+0x6>
+		else if(PushButtonDet(1) == 1)	MakeSound(RE);
+ 12a:	81 e0       	ldi	r24, 0x01	; 1
+ 12c:	90 e0       	ldi	r25, 0x00	; 0
+ 12e:	e0 df       	rcall	.-64     	; 0xf0 <PushButtonDet>
+ 130:	01 97       	sbiw	r24, 0x01	; 1
+ 132:	21 f4       	brne	.+8      	; 0x13c <main+0x2a>
+ 134:	89 e4       	ldi	r24, 0x49	; 73
+ 136:	9d e0       	ldi	r25, 0x0D	; 13
+ 138:	c3 df       	rcall	.-122    	; 0xc0 <MakeSound>
+ 13a:	ee cf       	rjmp	.-36     	; 0x118 <main+0x6>
+		else if(PushButtonDet(2) == 1)	MakeSound(MI);
+ 13c:	82 e0       	ldi	r24, 0x02	; 2
+ 13e:	90 e0       	ldi	r25, 0x00	; 0
+ 140:	d7 df       	rcall	.-82     	; 0xf0 <PushButtonDet>
+ 142:	01 97       	sbiw	r24, 0x01	; 1
+ 144:	21 f4       	brne	.+8      	; 0x14e <main+0x3c>
+ 146:	86 ed       	ldi	r24, 0xD6	; 214
+ 148:	9b e0       	ldi	r25, 0x0B	; 11
+ 14a:	ba df       	rcall	.-140    	; 0xc0 <MakeSound>
+ 14c:	e5 cf       	rjmp	.-54     	; 0x118 <main+0x6>
+		else if(PushButtonDet(3) == 1)	MakeSound(FA);
+ 14e:	83 e0       	ldi	r24, 0x03	; 3
+ 150:	90 e0       	ldi	r25, 0x00	; 0
+ 152:	ce df       	rcall	.-100    	; 0xf0 <PushButtonDet>
+ 154:	01 97       	sbiw	r24, 0x01	; 1
+ 156:	21 f4       	brne	.+8      	; 0x160 <main+0x4e>
+ 158:	81 e3       	ldi	r24, 0x31	; 49
+ 15a:	9b e0       	ldi	r25, 0x0B	; 11
+ 15c:	b1 df       	rcall	.-158    	; 0xc0 <MakeSound>
+ 15e:	dc cf       	rjmp	.-72     	; 0x118 <main+0x6>
+		else if(PushButtonDet(4) == 1)	MakeSound(SOL);
+ 160:	84 e0       	ldi	r24, 0x04	; 4
+ 162:	90 e0       	ldi	r25, 0x00	; 0
+ 164:	c5 df       	rcall	.-118    	; 0xf0 <PushButtonDet>
+ 166:	01 97       	sbiw	r24, 0x01	; 1
+ 168:	21 f4       	brne	.+8      	; 0x172 <main+0x60>
+ 16a:	87 ef       	ldi	r24, 0xF7	; 247
+ 16c:	99 e0       	ldi	r25, 0x09	; 9
+ 16e:	a8 df       	rcall	.-176    	; 0xc0 <MakeSound>
+ 170:	d3 cf       	rjmp	.-90     	; 0x118 <main+0x6>
+		else if(PushButtonDet(5) == 1)	MakeSound(LA);
+ 172:	85 e0       	ldi	r24, 0x05	; 5
+ 174:	90 e0       	ldi	r25, 0x00	; 0
+ 176:	bc df       	rcall	.-136    	; 0xf0 <PushButtonDet>
+ 178:	01 97       	sbiw	r24, 0x01	; 1
+ 17a:	21 f4       	brne	.+8      	; 0x184 <main+0x72>
+ 17c:	81 ee       	ldi	r24, 0xE1	; 225
+ 17e:	98 e0       	ldi	r25, 0x08	; 8
+ 180:	9f df       	rcall	.-194    	; 0xc0 <MakeSound>
+ 182:	ca cf       	rjmp	.-108    	; 0x118 <main+0x6>
+		else if(PushButtonDet(6) == 1)	MakeSound(SI);
+ 184:	86 e0       	ldi	r24, 0x06	; 6
+ 186:	90 e0       	ldi	r25, 0x00	; 0
+ 188:	b3 df       	rcall	.-154    	; 0xf0 <PushButtonDet>
+ 18a:	01 97       	sbiw	r24, 0x01	; 1
+ 18c:	21 f4       	brne	.+8      	; 0x196 <main+0x84>
+ 18e:	88 ee       	ldi	r24, 0xE8	; 232
+ 190:	97 e0       	ldi	r25, 0x07	; 7
+ 192:	96 df       	rcall	.-212    	; 0xc0 <MakeSound>
+ 194:	c1 cf       	rjmp	.-126    	; 0x118 <main+0x6>
+ 196:	87 e0       	ldi	r24, 0x07	; 7
+		else if(PushButtonDet(7) == 1)	MakeSound(DO>>1);
+ 198:	90 e0       	ldi	r25, 0x00	; 0
+ 19a:	aa df       	rcall	.-172    	; 0xf0 <PushButtonDet>
+ 19c:	01 97       	sbiw	r24, 0x01	; 1
+ 19e:	09 f0       	breq	.+2      	; 0x1a2 <main+0x90>
+ 1a0:	bb cf       	rjmp	.-138    	; 0x118 <main+0x6>
+ 1a2:	84 e7       	ldi	r24, 0x74	; 116
+ 1a4:	97 e0       	ldi	r25, 0x07	; 7
+ 1a6:	8c df       	rcall	.-232    	; 0xc0 <MakeSound>
+ 1a8:	b7 cf       	rjmp	.-146    	; 0x118 <main+0x6>
+
+000001aa <_exit>:
+ 1aa:	f8 94       	cli
+
+000001ac <__stop_program>:
+ 1ac:	ff cf       	rjmp	.-2      	; 0x1ac <__stop_program>
